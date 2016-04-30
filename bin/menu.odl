@@ -1,0 +1,42 @@
+#  Menu.rb
+#  
+#  Copyright 2016 ChaosX <ChaosX@CHAOSX-PC>
+#  
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#  
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#  
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+#  MA 02110-1301, USA.
+#  
+#  
+
+
+class Menu < Shoes::Widget
+  def initialize(color, args)
+    background color
+    para link("#{args[:name]}", :stroke => black, :fill => nil).
+      click { visit args[:location] },
+        :margin => (args[:height]<=args[:width] ? args[:height]/2 : args[:width]/2)-20, :align => "center", :size => 20
+    @height = args[:height]
+    @width = args[:width]
+  end
+  
+  attr_reader :width
+  attr_reader :height
+  
+end
+
+class Main < Shoes
+	url '/', :setup
+	url '/Help', :help
+	url '/Home', :home
+end

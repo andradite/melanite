@@ -1,0 +1,45 @@
+#  DataTypes.rb
+#  
+#  Copyright 2016 ChaosX <ChaosX@CHAOSX-PC>
+#  
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#  
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#  
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+#  MA 02110-1301, USA.
+#  
+#  
+require 'DataTypes/chars_and_strings.rb'
+
+class Main < Shoes
+	url '/DataTypes', :data_types
+	url '/DataTypes/page_1', :data_types_1
+	
+	def data_types
+		app.set_window_title('DataTypes')
+		data_types_1
+	end
+	
+	def data_types_1
+		style(Shoes::Link, :underline => nil)
+		style(Shoes::LinkHover, :fill => eval("#{PAINT[rand(0...135)]}"), :underline => nil)
+		section_1 = menu (C1S4 ? gray : rgb(0,191,255)), :name => "Chars and Strings", :location => '/DataTypes/chars_and_strings', :width => app.width*3/4, :height => app.height/3, :margin => 5
+		section_2 = menu (C2S4 ? gray : rgb(218,165,181)), :name => "Section 2", :location => '/Home/page_1', :width => app.width/4, :height => app.height*2/9, :margin => 5
+		section_3 = menu (C3S5 ? gray : rgb(255,0,255)), :name => "Section 3", :location => '/Home/page_1', :width => app.width*9/20, :height => app.height*11/30, :margin => 5
+		section_4 = menu (C4S3 ? gray : rgb(0,255,0)), :name => "Section 4", :location => '/Home/page_1', :width => app.width*3/10, :height => app.height*11/30, :margin => 5
+		section_5 = menu (false ? gray : rgb(255,140,0)), :name => "Section 5", :location => '/Home/page_1', :width => app.width/4, :height => app.height*43/90, :margin => 5
+		section_6 = menu (false ? gray : rgb(0,255,255)), :name => "Section 6", :location => '/Home/page_1', :width => app.width/2, :height => app.height*3/10, :margin => 5
+		section_7 = menu (false ? gray : rgb(255,91,71)), :name => "Section 7", :location => '/Home/page_1', :width => app.width/2, :height => app.height*3/10, :margin => 5
+
+		section_1.move(0,0);	section_2.move(section_1.width,0);	section_3.move(0,section_1.height);	section_4.move(section_3.width,section_1.height);	section_5.move(section_1.width,section_2.height); section_6.move(0,section_1.height+section_3.height);	section_7.move(section_6.width,section_1.height+section_3.height)
+	end
+end

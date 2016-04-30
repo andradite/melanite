@@ -1,0 +1,331 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pa",
+				"paddle_collision"
+			],
+			[
+				"paddle_",
+				"paddle_collision"
+			],
+			[
+				"ball",
+				"ball_y"
+			],
+			[
+				"pad",
+				"paddle_x"
+			],
+			[
+				"y",
+				"y"
+			],
+			[
+				"ti",
+				"tick"
+			],
+			[
+				"new",
+				"new_state"
+			],
+			[
+				"is",
+				"is_dead"
+			],
+			[
+				"un",
+				"unless	unless … end"
+			],
+			[
+				"fill",
+				"fill_cell"
+			],
+			[
+				"canvas",
+				"canvas_id"
+			],
+			[
+				"CE",
+				"CELL_HEIGHT"
+			],
+			[
+				"CELL",
+				"CELL_WIDTH"
+			],
+			[
+				"doc",
+				"documentElement"
+			],
+			[
+				"p",
+				"page_y"
+			],
+			[
+				"C",
+				"CELL_HEIGHT"
+			],
+			[
+				"Cel",
+				"CELL_HEIGHT"
+			],
+			[
+				"width",
+				"width"
+			],
+			[
+				"max",
+				"max_y"
+			],
+			[
+				"ma",
+				"max_x"
+			],
+			[
+				"fl",
+				"floor"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/User/Shoes.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/User/Shoes.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Shoes.sublime-build",
+					"Build Test"
+				],
+				[
+					"Packages/User/Shoes.sublime-build",
+					"Build Complete"
+				]
+			],
+			[
+				"Packages/User/Shoes.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "ruby",
+		"selected_items":
+		[
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"syn",
+				"Set Syntax: Ruby"
+			],
+			[
+				"",
+				"Build With: Ruby"
+			]
+		],
+		"width": 472.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Program Files (xSF)/GitHub/melanite"
+	],
+	"file_history":
+	[
+		"/C/Program Files (xSF)/GitHub/melanite/bin/Main.rb",
+		"/C/Program Files (xSF)/GitHub/melanite/Main.rb",
+		"/C/Program Files (xSF)/GitHub/melanite/colors.txt",
+		"/C/Program Files (xSF)/GitHub/melanite/Containers.rb",
+		"/C/Program Files (xSF)/GitHub/melanite/DataTypes.rb",
+		"/C/Program Files (xSF)/GitHub/melanite/Depend.rb",
+		"/C/Program Files (xSF)/GitHub/melanite/Help.rb",
+		"/C/Program Files (xSF)/GitHub/melanite/Home.rb",
+		"/C/Program Files (xSF)/GitHub/melanite/Menu.rb",
+		"/C/Program Files (xSF)/GitHub/melanite/README.md",
+		"/C/Program Files (xSF)/GitHub/melanite/Setup.rb",
+		"/C/Users/ChaosX/AppData/Roaming/Sublime Text 3/Packages/User/Shoes.sublime-build",
+		"/C/Users/ChaosX/AppData/Roaming/Sublime Text 3/Packages/User/JRuby.sublime-build",
+		"/C/Program Files (xSF)/GitHub/melanite/start",
+		"/C/Program Files (xSF)/GitHub/melanite/untitled.rb",
+		"/C/Program Files (xSF)/GitHub/melanite/user",
+		"/C/jruby-9.0.5.0/projects/my_game/my-game.sublime-project",
+		"/C/jruby-9.0.5.0/projects/my_game/bin/my-game.rb",
+		"/C/jruby-9.0.5.0/projects/my_game/my_game.rb",
+		"/C/jruby-9.0.5.0/projects/my_game/verybasic.rb",
+		"/C/Users/ChaosX/AppData/Roaming/Sublime Text 3/Packages/User/Warbler.sublime-build",
+		"/C/jruby-9.0.5.0/projects/my_game/bin/my_game.rb",
+		"/C/jruby-9.0.5.0/projects/my_game/pong.rb",
+		"/C/jruby-9.0.5.0/projects/my_game/bin/pong.rb",
+		"/C/Users/ChaosX/AppData/Roaming/Sublime Text 3/Packages/User/Opal.sublime-build",
+		"/C/Program Files/Sublime Text 3/Packages/Ruby.sublime-package",
+		"/C/Ruby200-x64/scripts/conway_gol/main.css",
+		"/C/Ruby200-x64/scripts/conway_gol/index.html",
+		"/C/Ruby200-x64/scripts/conway_gol/Rakefile",
+		"/C/Ruby200-x64/scripts/conway_gol/app/grid.rb",
+		"/C/Ruby200-x64/scripts/conway_gol/app/interval.rb",
+		"/C/Ruby200-x64/scripts/conway_gol/app/conway.rb",
+		"/C/Ruby200-x64/scripts/conway_gol/Gemfile",
+		"/C/Ruby200-x64/scripts/conway_gol/Guardfile",
+		"/C/Ruby200-x64/scripts/conway_gol/styles.css",
+		"/C/Ruby200-x64/scripts/conway_gol/Gemfile.rb"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"add_mouse_event_listener",
+			"  <",
+			"  <script src=\"https://cdnjs.cloudflare.com/ajax/libs/opal/0.3.43/opal.min.js\"></script>\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/Shoes.sublime-build",
+	"project": ".project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Ruby200-x64\\scripts\\conway_gol\\conway_gol.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
