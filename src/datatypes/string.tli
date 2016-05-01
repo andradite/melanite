@@ -1,0 +1,63 @@
+#  chars_and_strings.rb
+#  
+#  Copyright 2016 ChaosX <ChaosX@CHAOSX-PC>
+#  
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#  
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#  
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+#  MA 02110-1301, USA.
+#  
+#  
+
+
+class Main < Shoes
+	url '/DataTypes/chars_and_strings', :chars_and_strings_1
+	
+	def chars_and_strings_1
+		title "Chapter 1, Section 1: The Character Pulling the Strings\n", :align => 'center'
+		tagline "Welcome to the first section of Jetpack!\n\n", :align => 'center'
+		para "We're here to talk about"; para em "data types"
+		para ", or, the types of data that can be stored in Ruby "; para em "containers. "
+		para "The first of the basic data types is"; para em "Char"; para " or a character."
+		para "Which of these is an example of a character?"
+		title "#{"4".is_a? String}"
+		options = list_box :items => ['True', '3.14', '+', 'C']
+		button('Next') do
+			if options.text == 'C'
+				alert 'Correct!', :title => 'Jetpack says'
+			else
+				alert 'Incorrect!', :title => 'Jetpack says'
+			end
+		end
+	end
+	
+	def chars_and_strings_2
+		#~ title "Chapter 1, Section 1: The Character Pulling the Strings\n", :align => 'center'
+		#~ tagline "Welcome to the first section of Jetpack!\n\n", :align => 'center'
+		#~ para "We're here to talk about"; para em "data types"
+		#~ para ", or, the types of data that can be stored in Ruby "; para em "containers. "
+		#~ para "The first of the basic data types is"; para em "Char"
+		#~ para " or a character. The letter"; para em "'C'"; para "itself is a Char."
+		para "All you need to identify a char in you code is surround it with these symbols ''. "
+		para "Try running the code below and then try using your own characters!\n\n"
+		
+		@test = edit_box "'C'", :width => app.width*3/4, :height => app.height/3
+		stack
+		button "Run" do
+			alert eval(@test.text), :title => "Jetpack says"
+		end
+		button "Save"
+	end
+end
+
+

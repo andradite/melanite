@@ -1,0 +1,75 @@
+#  Setup.rb
+#  
+#  Copyright 2016 ChaosX <ChaosX@CHAOSX-PC>
+#  
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#  
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#  
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+#  MA 02110-1301, USA.
+#  
+#
+
+@@start = "The program that teaches YOU how to write your own lessons!\n\n"
+@@start += "Jetpack is designed to turn any novice or beginner progammer into an full-fledged program designer. "
+@@start += "The program will teach you basic program techniques and ettiquite that you can use across multiple languages and help you to master the ruby programming style with hands-on practice.\n\n"
+@@start += "So strap in and get ready to take off on a programming adventure with Jetpack!"
+
+@@commands = "Press ESC at any time to close Jetpack!\n"
+@@commands += "Press F1 at any time to open the Help Menu!\n"
+@@commands += "Press F5 to refresh the screen! (Especially if you resize the program.)"
+
+class Main < Shoes
+	def setup
+		alert @@start, :title => 'Welcome to Ruby Jetpack!' if START
+		alert @@commands, :title => 'Jetpack says' if HELP
+		app.fullscreen = FULLSCREEN
+		
+		keypress do |key|
+			close if (key == :escape)
+			window(:title => 'Help').visit '/Help' if (key == :f1)
+			visit app.location if (key == :f5)
+			app.fullscreen = (app.fullscreen ? false : true) if (key == :f11)
+			previous_page if (key == :backspace)
+			next_page if (key == :tab)
+		end
+		visit '/Home'
+		#~ visit '/DataTypes/chars_and_strings'
+	end
+	
+	def previous_page
+		case app.location
+			when '/Home/page_2'
+				visit '/Home/page_1'
+		end
+		
+		case app.location
+			when '/DataTypes/page_2'
+				visit '/DataTypes/page_1'
+		end
+
+	end
+	
+	def next_page
+		#~ case app.location
+			#~ when '/Home/page_1'
+				#~ visit '/Home/page_2'
+		#~ end
+		
+		#~ case app.location
+			#~ when '/DataTypes/page_1'
+				#~ visit '/DataTypes/page_2'
+		#~ end
+		
+	end
+
+end

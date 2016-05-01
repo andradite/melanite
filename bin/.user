@@ -1,0 +1,30 @@
+START = true
+HELP = true
+FULLSCREEN = false
+
+#~ Chapter 0: Data Types
+C1S1 = false #~ Section 1: The Character Pulling the Strings
+C1S2 = false #~ Section 2: The Short, the Long and Everything Inbetween
+C1S3 = false #~ Section 3: Floating Double Decimals
+C1S4 = false #~ Section 4: Nil, Nil, Draw
+C1S5 = false #~ Section 5: Hello? Operator?
+
+#~ Chapter 1: Containers
+C2S0 = false #~ Section 0: Variable Frequency
+C2S1 = false #~ Section 1: A Ray Of Sunshine
+C2S2 = false #~ Section 2: Golden Hashbrowns
+C2S3 = false #~ Section 3: Enter The Matrix
+C2S4 = false #~ Section 4: Running out of Time
+C2S5 = false #~ Section 4: Building Blocks Programming
+
+#~ Chapter 2: Variables and Functions
+C3S1 = false #~ Section 1: Expanding on Local Variables and Blocks
+C3S2 = false #~ section 2: If, Then, Else, End
+C3S3 = false #~ Section 3: Do, While, Each, For
+C3S4 = false #~ Section 4: Constants
+C3S5 = false #~ Section 5: Definitions and Declarations
+
+#~ Chapter 5: Objects and Structure
+C4S1 = false #~ Section 1: Modules and Object-Orientation
+C4S2 = false #~ Section 2: Classes
+C4S3 = false #~ Section 3: Inheritance

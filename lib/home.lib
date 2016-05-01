@@ -1,0 +1,89 @@
+#  Home.rb
+#  
+#  Copyright 2016 ChaosX <ChaosX@CHAOSX-PC>
+#  
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#  
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#  
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+#  MA 02110-1301, USA.
+#  
+#  
+
+class Main < Shoes
+	url '/Home/page_1', :home_1
+	#~ url '/Home/page_2', :home_2
+	
+	def home
+		background white
+		#~ start.click do |button, left, top|
+			#~ para button
+		#~ end
+		#~ style(Shoes::Link, :underline => nil)
+		#~ style(Shoes::LinkHover, :fill => eval("#{PAINT[rand(0...135)]}"), :underline => nil)
+		#~ visit '/Home/page_1'
+		#~ start = menu green, :name => 'Start!', :location => '/Home/page_1', :width => 100, :height => 50
+		#~ start.move(start.width,start.height)
+		#~ start.move(app.width,app.height*2/3)
+		start = image 'start', :width => 500
+		start.click {visit '/Home/page_1'}
+		title 'Press the button to your Jetpack!'
+		#~ visit '/Home'
+	end
+	
+	def home_1
+		app.set_window_title('Home')
+		style(Shoes::Link, :underline => nil)
+		style(Shoes::LinkHover, :fill => eval("#{PAINT[rand(0...135)]}"), :underline => nil)
+		chapter_1 = menu (C1S4 ? gray : rgb(0,191,255)), :name => "Chapter 1: Data Types", :location => '/DataTypes', :width => app.width*3/4, :height => app.height/3, :margin => 5
+		chapter_2 = menu (C2S4 ? gray : rgb(218,165,181)), :name => "Chapter 2", :location => '/Home/page_1', :width => app.width/4, :height => app.height*2/9, :margin => 5
+		chapter_3 = menu (C3S5 ? gray : rgb(255,0,255)), :name => "Chapter 3", :location => '/Home/page_1', :width => app.width*9/20, :height => app.height*11/30, :margin => 5
+		chapter_4 = menu (C4S3 ? gray : rgb(0,255,0)), :name => "Chapter 4", :location => '/Home/page_1', :width => app.width*3/10, :height => app.height*11/30, :margin => 5
+		chapter_5 = menu (false ? gray : rgb(255,140,0)), :name => "Chapter 5", :location => '/Home/page_1', :width => app.width/4, :height => app.height*43/90, :margin => 5
+		chapter_6 = menu (false ? gray : rgb(0,255,255)), :name => "Chapter 6", :location => '/Home/page_1', :width => app.width/2, :height => app.height*3/10, :margin => 5
+		chapter_7 = menu (false ? gray : rgb(255,91,71)), :name => "Chapter 7", :location => '/Home/page_1', :width => app.width/2, :height => app.height*3/10, :margin => 5
+
+		chapter_1.move(0,0);	chapter_2.move(chapter_1.width,0);	chapter_3.move(0,chapter_1.height);	chapter_4.move(chapter_3.width,chapter_1.height);	chapter_5.move(chapter_1.width,chapter_2.height); chapter_6.move(0,chapter_1.height+chapter_3.height);	chapter_7.move(chapter_6.width,chapter_1.height+chapter_3.height)
+	end
+	
+	#~ def home_2
+		#~ style(Shoes::Link, :underline => nil)
+		#~ style(Shoes::LinkHover, :fill => eval("#{PAINT[rand(0...135)]}"), :underline => nil)
+		#~ chapter_1 = menu (C1S4 ? gray : rgb(0,191,255)), :name => "Data Types", :location => '/DataTypes', :width => app.width*3/4, :height => app.height/3, :margin => 5
+		#~ chapter_2 = menu (C2S4 ? gray : rgb(218,165,181)), :name => "Chapter 2", :location => '/Home/page_1', :width => app.width/4, :height => app.height*2/9, :margin => 5
+		#~ chapter_3 = menu (C3S5 ? gray : rgb(255,0,255)), :name => "Chapter 3", :location => '/Home/page_1', :width => app.width*9/20, :height => app.height*11/30, :margin => 5
+		#~ chapter_4 = menu (C4S3 ? gray : rgb(0,255,0)), :name => "Chapter 4", :location => '/Home/page_1', :width => app.width*3/10, :height => app.height*11/30, :margin => 5
+		#~ chapter_5 = menu (false ? gray : rgb(255,140,0)), :name => "Chapter 5", :location => '/Home/page_1', :width => app.width/4, :height => app.height*43/90, :margin => 5
+		#~ chapter_6 = menu (false ? gray : rgb(0,255,255)), :name => "Chapter 6", :location => '/Home/page_1', :width => app.width/2, :height => app.height*3/10, :margin => 5
+		#~ chapter_7 = menu (false ? gray : rgb(255,91,71)), :name => "Chapter 7", :location => '/Home/page_1', :width => app.width/2, :height => app.height*3/10, :margin => 5
+
+		#~ chapter_1.move(0,0);	chapter_2.move(chapter_1.width,0);	chapter_3.move(0,chapter_1.height);	chapter_4.move(chapter_3.width,chapter_1.height);	chapter_5.move(chapter_1.width,chapter_2.height); chapter_6.move(0,chapter_1.height+chapter_3.height);	chapter_7.move(chapter_6.width,chapter_1.height+chapter_3.height)
+	#~ end
+
+#~ menu red,    :width => 140, :height => 120, :margin => 4
+#~ menu purple, :width => 140, :height => 120, :margin => 4
+#~ background darkslateblue
+#~ para link("Box", :stroke => white, :fill => nil)
+#~ click { visit "/" }
+#~ button do
+#~ stroke darkslateblue
+#~ fill darkslateblue
+#~ rect 0,0, app.width, app.height
+#~ para "[#{@app.width},#{@app.height}]"
+#~ end
+#~ stack do 
+#~ para "Welcome to My Demo app"
+#~ flow do
+#~ button "entry" do visit '/entry'end
+#~ button "help" do visit '/help' end
+	#~ end
+end
